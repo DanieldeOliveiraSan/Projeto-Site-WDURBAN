@@ -501,6 +501,18 @@ ul li a {
   color: white;
   font-family:  "Montserrat", sans-serif; ;
 
+<<<<<<< HEAD
+/* Página equipe */
+.titulo-equipe {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  color: white;
+  font-family:  "Montserrat", sans-serif; ;
+}
+=======
 }
 .container_serviços2{
   width: 250px;
@@ -513,9 +525,70 @@ ul li a {
   width: 250px;
   height: 250px;
   border: solid 1px white;
+>>>>>>> 9e9e01a8f464333f7d45c7115e661cede7cc8dd3
 
+.conteudo-equipe-wander{
+  align-items: center;
+  position: relative;
+  width: 300px;
+ }
+
+<<<<<<< HEAD
+#equipe-funcao-wander{
+  color: white;
+  align-items: center;
+}
+=======
+}
+>>>>>>> 9e9e01a8f464333f7d45c7115e661cede7cc8dd3
+
+.img-container-3 .equipe_funcao{
+  font-family:"Montserrat", sans-serif;  
+  background-color: white;  
+  border-style: solid;
+  border-width: 1%;
+  border-color: black(167, 30, 30);
+}
+
+ .img-container-3{
+  position: relative;
+  width: 300px;
+  
+}
+.img-container-3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid white
 
 }
+
+.img-container-3 .btn-outline-secondary{
+  position:absolute;
+  top: 50%; /* Posiciona o nome verticalmente no meio */
+  left: 25%; /* Posiciona o nome horizontalmente no meio */
+  border-radius: 0px;
+  font-family:"Montserrat", sans-serif;  
+  background-color: white;
+  
+}
+.btn-outline-secondary:hover{
+  background-color: #000;
+  color: white;
+
+}
+
+.insta-img-wander img{
+  margin-top: 15px;
+  margin-left: 250px;
+  width: 40px;
+  height: auto;
+
+}
+
+
+
+
 
 
 
