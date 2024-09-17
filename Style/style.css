@@ -490,13 +490,23 @@ ul li a {
 .titulo1{
   width: 100%;
   height: 50px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: white;
-
-
+  font-family:  "Montserrat", sans-serif; ;
+}
+.titulo2{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family:  "Montserrat", sans-serif; ;
 
 }
 
