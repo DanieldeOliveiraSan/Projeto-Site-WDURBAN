@@ -502,7 +502,37 @@ ul li a {
   font-family:  "Montserrat", sans-serif; ;
 }
 
-<<<<<<< HEAD
+/*Página Serviços*/
+
+.container_serviços{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  
+
+
+
+}
+
+.container_serviços2 img{
+  width: 300px;
+  height: 300px;
+  opacity: 0.4;
+  
+}
+.img-serviços:hover{
+  width: 301px;
+  height: 301px;
+  opacity: 100;
+  transition: opacity 0.5s ease;
+  transform: scale(0.5/0.5)
+
+}
+
+
 /* Página equipe */
 .titulo-equipe {
   display: flex;
@@ -520,14 +550,10 @@ ul li a {
   width: 300px;
  }
 
-<<<<<<< HEAD
 #equipe-funcao-wander{
   color: white;
   align-items: center;
 }
-=======
-}
->>>>>>> 9e9e01a8f464333f7d45c7115e661cede7cc8dd3
 
 .img-container-3 .equipe_funcao{
   font-family:"Montserrat", sans-serif;  
