@@ -475,9 +475,6 @@ ul li a {
   
 
   }
- 
-  
-
 
 }
 .titulo1{
@@ -530,6 +527,14 @@ ul li a {
   transition: opacity 0.5s ease;
   transform: scale(0.5/0.5)
 
+}
+.container_serviços3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 15px;
 }
 
 
