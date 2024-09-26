@@ -76,6 +76,7 @@ header{
 .container-fluid {
   background-color: black;
   
+  
 }
 .navbar-toggler{
   background-color: rgb(184, 179, 179);
@@ -484,7 +485,11 @@ ul li a {
   }
 
 }
-.titulo1{
+
+
+/*Página Serviços*/
+.titulo1{ 
+  padding: 50px;
   width: 100%;
   height: 50px;
   margin-top: 40px;
@@ -493,7 +498,7 @@ ul li a {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family:  "Montserrat", sans-serif; ;
+  font-family:"Montserrat", sans-serif; 
 }
 .titulo2{
   width: 100%;
@@ -503,10 +508,8 @@ ul li a {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family:  "Montserrat", sans-serif; ;
+  font-family: "Montserrat", sans-serif;
 }
-
-/*Página Serviços*/
 
 .container_serviços{
   display: flex;
@@ -543,6 +546,81 @@ ul li a {
   margin-top: 50px;
   gap: 25px;
 }
+.button_horario{
+
+  padding: 15px 40px;
+  border:none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+   }
+   .button_horario::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+   }
+   
+   .button_horario::before{
+    content: "";
+    background: "";
+    background: linear-gradient(
+      45deg,
+       #b6b6b6, #fffefe, #e6e5df,#c8dbc0,
+       #0d0e0d,#cfd5f3,#fdfdfd,#e0d5d5 );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+
+   }
+   @keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+   }
+
+   .button_horario:hover::before{
+    opacity: 1;
+   }
+   .button_horario:active::after{
+    background: transparent;
+
+   }
+   .button_horario:active{
+    color: #000;
+
+
+   }
+   .container-fluid-servicos{
+    
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: -47px;
+    border-top: white 1px;
+    position: relative;
+    z-index: 10;
+
+
+   }
+   
 
 
 /* Página equipe */
@@ -611,68 +689,7 @@ ul li a {
 
 }
 
-.button_horario{
 
-  padding: 15px 40px;
-  border:none;
-  outline: none;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-   }
-   .button_horario::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-   }
-   
-   .button_horario::before{
-    content: "";
-    background: "";
-    background: linear-gradient(
-      45deg,
-       #b6b6b6, #fffefe, #e6e5df,#c8dbc0,
-       #0d0e0d,#cfd5f3,#fdfdfd,#e0d5d5 );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    opacity: 1;
-
-   }
-   @keyframes glowing{
-    0%{background-position: 0 0;}
-    50%{background-position: 400% 0;}
-    100%{background-position: 0 0;}
-   }
-
-   .button_horario:hover::before{
-    opacity: 1;
-   }
-   .button_horario:active::after{
-    background: transparent;
-
-   }
-   .button_horario:active{
-    color: #000;
-
-
-   }
 
 
 
