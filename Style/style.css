@@ -488,6 +488,19 @@ ul li a {
 
 
 /*Página Serviços*/
+.body-servicos{
+  width: 100%;
+  height:auto;
+  background-color: black
+}
+@media  (max-width: 430px) {
+  .body-servicos{
+    height: 250rem;
+  }
+
+
+
+}
 .titulo1{ 
   padding: 50px;
   width: 100%;
@@ -543,8 +556,9 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   gap: 25px;
+  height: 100px;
 }
 .button_horario{
 
@@ -620,6 +634,21 @@ ul li a {
 
 
    }
+   .footer-servicos{
+  margin-top: 0px;
+  width:100%;
+  height: 180px;
+  background-color: black;
+  border-top: 0.1px white solid;  
+   }
+   @media  (max-width: 768px) {
+    .footer-servicos{
+      width: 100%;
+      background-color: black;
+      margin-top: 60px;
+      height: 400px;
+    }
+  }
    
 
 
