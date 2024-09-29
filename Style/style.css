@@ -15,6 +15,13 @@ body{
 
 
 }
+
+header{
+  background-color: black;
+
+
+
+}
 .whatsapp-button{
   position: fixed;
   bottom: 30px;
@@ -68,6 +75,7 @@ body{
 
 .container-fluid {
   background-color: black;
+  
   
 }
 .navbar-toggler{
@@ -435,6 +443,8 @@ footer{
   color: white;
   font-size: 12px;
   border-top: 1px solid white;
+  padding: 15px;
+ 
 }
 ul{  
   list-style-type: none;
@@ -463,6 +473,7 @@ ul li a {
     width: 300px;
     height: 150px;
     align-items: center;
+    justify-content: center;
   }
   .conteudo-footer2 h2{
     display: flex;
@@ -472,15 +483,30 @@ ul li a {
   .conteudo-footer2 p{
     display: flex;
     margin-left: 35px;
+    align-items: center;
   
 
   }
- 
-  
+
+}
+
+
+/*Página Serviços*/
+.body-servicos{
+  width: 100%;
+  height:auto;
+  background-color: black
+}
+@media  (max-width: 430px) {
+  .body-servicos{
+    height: 255rem;
+  }
+
 
 
 }
-.titulo1{
+.titulo1{ 
+  padding: 60px;
   width: 100%;
   height: 50px;
   margin-top: 40px;
@@ -489,20 +515,30 @@ ul li a {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family:  "Montserrat", sans-serif; ;
+  font-family:"Montserrat", sans-serif; 
 }
 .titulo2{
   width: 100%;
   height: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: white;
-  font-family:  "Montserrat", sans-serif; ;
+  font-family: "Montserrat", sans-serif;
 }
+@media  (max-width: 430px) {
+  .titulo1{
+    padding-top: 80px;    
+  }
+  .titulo2{
+    margin-bottom: 20px;
 
-/*Página Serviços*/
+
+  }
+  
+  }
 
 .container_serviços{
   display: flex;
@@ -510,10 +546,6 @@ ul li a {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
-  
-
-
 
 }
 
@@ -531,6 +563,106 @@ ul li a {
   transform: scale(0.5/0.5)
 
 }
+.container_serviços3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 25px;
+  height: 100px;
+}
+.button_horario{
+
+  padding: 15px 40px;
+  border:none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+   }
+   .button_horario::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+   }
+   
+   .button_horario::before{
+    content: "";
+    background: "";
+    background: linear-gradient(
+      45deg,
+       #b6b6b6, #fffefe, #e6e5df,#c8dbc0,
+       #0d0e0d,#cfd5f3,#fdfdfd,#e0d5d5 );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+
+   }
+   @keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+   }
+
+   .button_horario:hover::before{
+    opacity: 1;
+   }
+   .button_horario:active::after{
+    background: transparent;
+
+   }
+   .button_horario:active{
+    color: #000;
+
+
+   }
+   .container-fluid-servicos{
+    
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: -47px;
+    border-top: white 1px;
+    position: relative;
+    z-index: 10;
+
+
+   }
+   .footer-servicos{
+  margin-top: 0px;
+  width:100%;
+  height: 180px;
+  background-color: black;
+  border-top: 0.1px white solid;  
+   }
+   @media  (max-width: 768px) {
+    .footer-servicos{
+      width: 100%;
+      background-color: black;
+      margin-top: 60px;
+      height: 400px;
+    }
+  }
+   
 
 
 /* Página equipe */
@@ -605,6 +737,9 @@ ul li a {
   color: white;
 
 }
+
+
+
 
 
 
