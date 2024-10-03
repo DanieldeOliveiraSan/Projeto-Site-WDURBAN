@@ -168,6 +168,7 @@ header{
     width: 300px;
     
   }
+  
   .container{
    
     width:auto;
@@ -179,6 +180,7 @@ header{
     gap: 5px;
   
   }
+
 }
 
 .image-container {
@@ -193,9 +195,13 @@ header{
 }
 .img-container:hover{
   opacity: 0.4
-
-
 }
+
+
+
+
+
+
 .image-container .btn-overlay {
   position: absolute; /* Posiciona o botão sobre a imagem */
   top: 50%; /* Posiciona o botão verticalmente no meio */
