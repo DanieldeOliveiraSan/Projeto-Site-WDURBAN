@@ -765,6 +765,11 @@ ul li a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: -7px;
+  border-top: white 1px;
+  position: relative;
+  z-index: 10;
+
   
   
 
@@ -775,12 +780,67 @@ ul li a {
 
 
 }
+.titulo-contato{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  margin-top: 25px;
+
+
+}
+.titulo-contato h2{
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+.titulo-contato2 h4 {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 25px;
+
+
+}
+.titulo-contato2 p {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 25px;
+  
+  
+  }
+
+.container-contato iframe{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.maps{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
 
 .container-contato{
 
   width: 550px;
   height: 500px;
   background-color: black;
+ 
 }
 .container-contato-formulario{
   width: 550px;
