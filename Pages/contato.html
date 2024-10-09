@@ -77,7 +77,7 @@
             
             <div class="container-contato">
                 <div class="titulo-contato"><h2>Fale Conosco</h2></div>
-                <div class="titulo-contato2"><h4>Nossos horarios de atendimento:</h4>
+                <div class="titulo-contato2"><h4>Nossos horários de atendimento:</h4>
                     <p>Terça a sexta das 10:00 as 19:00 <br>
                       Sábado das 09:00 as 19:00
                     </p>      
@@ -99,7 +99,25 @@
 
 
             </div>
-            <div class="container-contato-formulario"></div>
+            <div class="container-contato-formulario">
+              <form action="/send-email" method="POST">
+                <input type="text" id="name" name="name" placeholder="NOME" required> <br></br>
+                <input type="tel" name="phone" id="phone" placeholder="TELEFONE" required><br></br>
+                <input type="email" name="email" id="email" placeholder="E-MAIL" required><br></br>
+                <input type="text" id="subject" name="subject" placeholder="ASSUNTO" required> <br></br>
+                <textarea name="message" id="message" rows="5" placeholder="MENSAGEM" required></textarea><br></br>
+                <button type="submit" id="button-form">ENVIAR</button>
+ </form>          
+
+
+
+
+
+            </div>      
+
+
+
+
         </div>
         
 
