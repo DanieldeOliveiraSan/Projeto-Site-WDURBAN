@@ -745,16 +745,51 @@ ul li a {
 }
 
 /* Página contato */
+.body-contato{
+
+  width: 100%;
+  height: 300px;
+
+
+}
+
+
+@media  (max-width: 430px) {
+  .body-contato{
+    height: 500rem;
+  }
+
+
+
+}
 
 .container-fluid-contato{
   width: 100%;
-  height: 700px;
-  background-color: blueviolet; 
+  height: 600px;
+  background-color: black; 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  border-top: solid 0.90px rgb(36, 36, 36) ;
+}
+
+@media  (max-width: 430px){
+  .container-fluid-contato{
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 500rem;
+
+
+
+  }
+
+
+
 }
 
 .container-contato-titulo{
@@ -766,7 +801,7 @@ ul li a {
   align-items: center;
   justify-content: center;
   margin-top: -7px;
-  border-top: white 1px;
+  border-top:  1px solid rgb(37, 37, 37);
   position: relative;
   z-index: 10;
 
@@ -875,6 +910,7 @@ margin-top: 7px;
   width: 550px;
   height: 500px;
   background-color: black;
+  border: solid 1px rgb(36,36,36);
  
 }
 .container-contato-formulario{
@@ -885,6 +921,7 @@ margin-top: 7px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: solid 1px rgb(36,36,36);
 }
 
 #name {  
@@ -931,6 +968,16 @@ margin-top: 7px;
   margin-left: 50px;
 
 
+}
+
+.footer-contato{
+  margin-top: 0px;
+  width:100%;
+  height: 180px;
+  background-color: black;
+  border-top: 0.1px white solid;  
+  
+  
 }
 
 
