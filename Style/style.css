@@ -748,7 +748,8 @@ ul li a {
 .body-contato{
 
   width: 100%;
-  height: 300px;
+  height: auto;
+  background-color: black;
 
 
 }
@@ -756,7 +757,7 @@ ul li a {
 
 @media  (max-width: 430px) {
   .body-contato{
-    height: 500rem;
+    height: 150rem;
   }
 
 
@@ -768,7 +769,7 @@ ul li a {
   height: 600px;
   background-color: black; 
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -782,7 +783,7 @@ ul li a {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 500rem;
+ 
 
 
 
@@ -913,6 +914,21 @@ margin-top: 7px;
   border: solid 1px rgb(36,36,36);
  
 }
+
+@media (max-width: 768px){
+
+  .container-contato{
+    width: auto;
+    height: auto;
+
+
+  }
+
+
+
+
+
+}
 .container-contato-formulario{
   width: 550px;
   height: 500px;
@@ -975,8 +991,23 @@ margin-top: 7px;
   width:100%;
   height: 180px;
   background-color: black;
-  border-top: 0.1px white solid;  
+  border-top: 0.1px white solid;    
   
+}
+
+@media (max-width:768px) {
+  .footer-contato{
+    width: 100%;
+    height:400px;
+    background-color: black;
+    margin-top: 500px;
+    height:auto;
+
+
+
+  }
+
+
   
 }
 
